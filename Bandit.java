@@ -110,7 +110,7 @@ public class Bandit {
         currentmean1=((count1-1)/ (double) n) * value1 + (1/(double) count1)*reward1[p];
         exploitationcount++;
         arm1underexploitation++;
-        System.out.println("Arm 1 pulled(exploitation). Reward collected "+(double) Math.round(reward1[p] * 1000.0) / 1000.0+" ,Current mean of Arm 1 is:"+(double) Math.round(currentmean1 * 1000.0) / 1000.0);
+        System.out.println("Arm 1 pulled(exploitation). Reward collected " + (double) Math.round(reward1[p] * 1000.0) / 1000.0 + ", Current mean of Arm 1 is: " + (double) Math.round(currentmean1 * 1000.0) / 1000.0);
         }
         else
         {
@@ -124,7 +124,7 @@ public class Bandit {
         currentmean2=((count2-1)/ (double) n) * value2 + (1/(double) count2)*reward2[q];
         exploitationcount++;
         arm2underexploitation++;
-        System.out.println("Arm 2 pulled(exploitation). Reward collected "+(double) Math.round(reward2[q] * 1000.0) / 1000.0+" ,Current mean of Arm 2 is:"+(double) Math.round(currentmean2 * 1000.0) / 1000.0);
+        System.out.println("Arm 2 pulled(exploitation). Reward collected " + (double) Math.round(reward2[q] * 1000.0) / 1000.0 + ", Current mean of Arm 2 is: " + (double) Math.round(currentmean2 * 1000.0) / 1000.0);
         }
         }
         else
@@ -151,7 +151,7 @@ public class Bandit {
         currentmean1=((count1-1)/ (double) n) * value1 + (1/(double) count1)*reward1[p];
         explorationcount++;
         arm1underexploration++;
-        System.out.println("Arm 1 pulled(exploration). Reward collected "+(double) Math.round(reward1[p] * 1000.0) / 1000.0+" ,Current mean of Arm 1 is:"+(double) Math.round(currentmean1 * 1000.0) / 1000.0);
+        System.out.println("Arm 1 pulled(exploration). Reward collected " + (double) Math.round(reward1[p] * 1000.0) / 1000.0 + ", Current mean of Arm 1 is: " + (double) Math.round(currentmean1 * 1000.0) / 1000.0);
         }
         else if(explorearm==2)
         {
@@ -165,14 +165,14 @@ public class Bandit {
         currentmean2=((count2-1)/ (double) n) * value2 + (1/(double) count2)*reward2[q];
         explorationcount++;
         arm2underexploration++;
-        System.out.println("Arm 2 pulled(exploration). Reward collected "+(double) Math.round(reward2[q] * 1000.0) / 1000.0+" ,Current mean of Arm 2 is:"+(double) Math.round(currentmean2 * 1000.0) / 1000.0);
+        System.out.println("Arm 2 pulled(exploration). Reward collected " + (double) Math.round(reward2[q] * 1000.0) / 1000.0 + ", Current mean of Arm 2 is:" + (double) Math.round(currentmean2 * 1000.0) / 1000.0);
         }
         }
         }
-        System.out.println("\t\t\tArm 1 pulled "+count1+" times with total mean "+(double) Math.round(currentmean1 * 1000.0) / 1000.0+" & Arm 2 pulled "+count2+" times with total mean "+(double) Math.round(currentmean2 * 1000.0) / 1000.0);
-        System.out.println("\t\t\tTotal explorations are: "+explorationcount+" and total exploitations are: "+exploitationcount);
-        System.out.println("\t\t\tArm 1 under exploration: "+arm1underexploration+" and Arm 2 under exploration: "+arm2underexploration);
-        System.out.println("\t\t\tArm 1 under exploitation: "+arm1underexploitation+" and Arm 2 under exploitation: "+arm2underexploitation);
+        System.out.println("\t\t\tArm 1 pulled " + count1 + " times with total mean " + (double) Math.round(currentmean1 * 1000.0) / 1000.0 + " & Arm 2 pulled "+ count2 + " times with total mean "+ (double) Math.round(currentmean2 * 1000.0) / 1000.0);
+        System.out.println("\t\t\tTotal explorations are: "+ explorationcount + " and total exploitations are: " + exploitationcount);
+        System.out.println("\t\t\tArm 1 under exploration: " + arm1underexploration + " and Arm 2 under exploration: " + arm2underexploration);
+        System.out.println("\t\t\tArm 1 under exploitation: " + arm1underexploitation + " and Arm 2 under exploitation: " + arm2underexploitation);
     }
     
 }
